@@ -2,12 +2,14 @@
 // https://docs.swift.org/swift-book
 
 import shared
+import SwiftUI
 
 public class OpenClass {
     public init() {}
     
-    public func openView() {
-        
+    @MainActor
+    public func openView() -> any View {
+        ContentView()
     }
     
     public var greeting: String {
