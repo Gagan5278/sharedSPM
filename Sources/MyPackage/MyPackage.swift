@@ -4,11 +4,13 @@
 import shared
 
 public class OpenClass {
-    func openView() {
+    public init() {}
+    
+    public func openView() {
         
     }
     
-    var greeting: String {
+    public var greeting: String {
         Greeting().greet()
     }
 }
